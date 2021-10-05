@@ -25,6 +25,7 @@ const Input = ({ placeholder, value, onChangeText, errors, isSecure, iconName })
                     onChangeText={onChangeText}
                     value={value}
                     secureTextEntry={showPassword}
+                    placeholderTextColor="white"
                 />
 
                 {isSecure &&

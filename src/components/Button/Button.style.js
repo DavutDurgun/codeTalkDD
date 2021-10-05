@@ -6,8 +6,8 @@ const base_style = StyleSheet.create({
         padding: 8,
         margin: 10,
         borderRadius: 5,
-        borderWidth: 1,
         alignItems: 'center',
+        borderWidth:1,
     },
     title: {
         marginLeft: 5,
@@ -24,8 +24,8 @@ export default {
         ...base_style,
         container: {
             ...base_style.container,
-            backgroundColor: colors.darkGreen,
-            borderColor: "white",
+            backgroundColor: '#ffffff77',
+            borderColor: colors.bg1,
         },
         title: {
             ...base_style.title,
@@ -37,12 +37,12 @@ export default {
         ...base_style,
         container: {
             ...base_style.container,
-            backgroundColor: 'white',
-            borderColor: colors.darkGreen,
+            backgroundColor: colors.beyaz,
+            borderColor: colors.bg1,
         },
         title: {
             ...base_style.title,
-            color: colors.darkGreen
+            color: colors.bg1
         },
     }),
 };

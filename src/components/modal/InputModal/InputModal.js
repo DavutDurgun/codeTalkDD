@@ -3,13 +3,13 @@ import { View, TextInput } from 'react-native';
 import Modal from 'react-native-modal';
 
 //style
-import styles from './ContentInputModal.style';
+import styles from './InputModal.style';
 
 //component
 import Button from '../../Button'
 
 
-const ContentInputModal = ({ visible, onClose, onSend }) => {
+const InputModal = ({ visible, textPlaceholder,buttonText, onClose, onSend }) => {
     const [text, setText] = React.useState(null);
     const handleSend = () => {
         if (!text) {
@@ -36,20 +36,19 @@ const ContentInputModal = ({ visible, onClose, onSend }) => {
             <View style={styles.container} >
                 <View style={styles.input_container}>
                     <TextInput
-                        placeholder="Darla hadi milleti.."
+                        placeholder={textPlaceholder}
                         onChangeText={setText}
                         multiline
                     />
                 </View>
 
                 <Button
-                    text="Gönder"
+                    text={buttonText}
                     onPress={handleSend}
-
                 />
             </View>
         </Modal>
     )
 }
 
-export default ContentInputModal;
+export default InputModal;

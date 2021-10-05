@@ -1,4 +1,5 @@
 import { StyleSheet } from 'react-native';
+import colors from '../../assets/styles/colors';
 
 export default StyleSheet.create({
     container: {
@@ -8,18 +9,25 @@ export default StyleSheet.create({
         width: '100%',
         flexDirection: 'row',
         alignItems: 'center',
-        backgroundColor: '#2b2b2b22',
+        borderBottomColor: colors.beyaz,
+        borderBottomWidth: 1,
         paddingHorizontal: 10
     },
     text: {
         flex: 1,
-        padding:3,
-    }, 
+        padding: 3,
+        color: colors.beyaz,
+        fontWeight: '500',
+        textDecorationColor: colors.beyaz,
+    },
     error: {
         color: '#FF214E',
         width: '100%',
-        fontWeight: '500',
+        fontWeight: '300',
         marginLeft: 10,
+    },
+    icon: {
+        color: colors.beyaz,
     }
 
 });

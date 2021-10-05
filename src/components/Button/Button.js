@@ -3,7 +3,7 @@ import { TouchableOpacity, Text, ActivityIndicator } from 'react-native';
 
 import styles from './Button.style';
 
-const Button = ({ text, onPress, loading, theme = 'primary' }) => {
+const Button = ({ text, onPress, loading, theme = 'secondary' }) => {
 
     return (
         <TouchableOpacity

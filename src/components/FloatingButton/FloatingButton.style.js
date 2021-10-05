@@ -11,8 +11,8 @@ export default StyleSheet.create({
         height: 60,
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: colors.darkGreen,
-        borderColor: 'white',
+        backgroundColor: colors.bg1,
+        borderColor: colors.beyaz,
         borderWidth: 5,
 
         shadowColor: "#000",
@@ -22,7 +22,7 @@ export default StyleSheet.create({
         },
         shadowOpacity: 0.30,
         shadowRadius: 4.65,
-        
+
         elevation: 8,
     }
 });

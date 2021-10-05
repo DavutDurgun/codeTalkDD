@@ -6,10 +6,17 @@ const deviceSize = Dimensions.get('window');
 export default StyleSheet.create({
     container: {
         flex: 1,
-    }, 
+        backgroundColor: colors.bg1
+    },
+    header_container: {
+        height: deviceSize.height / 2,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
     header: {
-        color: colors.darkGreen,
-        fontSize: 90,
+        color: colors.beyaz,
+        fontSize: 40,
+        fontWeight: '100',
         margin: 5,
-    }, 
+    },
 });
