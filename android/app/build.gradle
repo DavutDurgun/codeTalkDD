@@ -1,4 +1,5 @@
 apply plugin: "com.android.application"
+apply plugin: 'com.google.gms.google-services' 
 
 import com.android.build.OutputFile
 
@@ -82,6 +83,13 @@ project.ext.react = [
 ]
 
 apply from: "../../node_modules/react-native/react.gradle"
+
+project.ext.vectoricons = [
+    iconFontNames: [ 'MaterialCommunityIcons.ttf','MaterialIcons.ttf', 'EvilIcons.ttf' ] // Name of the font files you want to copy
+]
+
+apply from: "../../node_modules/react-native-vector-icons/fonts.gradle"
+
 
 /**
  * Set this to true to create two separate APKs instead of one:
@@ -192,6 +200,8 @@ dependencies {
     implementation fileTree(dir: "libs", include: ["*.jar"])
     //noinspection GradleDynamicVersion
     implementation "com.facebook.react:react-native:+"  // From node_modules
+
+    implementation project(':lottie-react-native')
 
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.0.0"
 

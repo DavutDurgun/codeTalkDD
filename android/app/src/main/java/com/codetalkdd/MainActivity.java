@@ -1,6 +1,7 @@
 package com.codetalkdd;
 
 import com.facebook.react.ReactActivity;
+import com.airbnb.android.react.lottie.LottiePackage;
 
 public class MainActivity extends ReactActivity {
 
